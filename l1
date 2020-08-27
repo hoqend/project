@@ -1,0 +1,25 @@
+import UIKit
+//квадратное уравнение ax^2+bx+c=0
+var a = 2.0
+var b = 6.0
+var c = 1.5
+var x1 = 0.0
+var x2 = 0.0
+
+var D = pow(b,2)-4*a*c
+
+if   (D<0)
+{
+    print ("Корней нет")
+}
+
+if (D==0)
+{
+    x1 = (-b+sqrt(D))/(2*a)
+}
+
+if (D>0)
+{
+    x1 = (-b+sqrt(D))/(2*a)
+    x2 = (-b-sqrt(D))/(2*a)
+}
